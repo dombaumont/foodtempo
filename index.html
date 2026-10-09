@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité – FoodTrack</title>
+<meta name="description" content="Politique de confidentialité de l’application FoodTrack pour iPhone.">
+<style>
+  :root {
+    --bg: #f3f6f1; --surface: #ffffff; --ink: #132019; --muted: #56665c;
+    --line: rgba(19, 32, 25, 0.12); --accent: #2e7d45; --soft: #e2efe4;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b0f0c; --surface: #151b17; --ink: #ecf2ed; --muted: #a3b5a9;
+            --line: rgba(236, 242, 237, 0.12); --accent: #6fcf87; --soft: #16261b; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 8px; }
+  h2 { font-size: 1.3rem; margin: 44px 0 10px; letter-spacing: -0.01em; }
+  h3 { font-size: 1.05rem; margin: 24px 0 6px; }
+  p, ul { margin: 0 0 14px; }
+  ul { padding-left: 1.2em; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  .meta { color: var(--muted); margin-bottom: 28px; }
+  .summary { background: var(--soft); border-radius: 18px; padding: 20px 22px; }
+  .summary h2 { margin-top: 0; }
+  .summary ul { margin: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0 16px; font-size: 0.95rem; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; }
+  .table-wrap { overflow-x: auto; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Politique de confidentialité</h1>
+  <p class="meta">Application FoodTrack pour iPhone · Dernière mise à jour : 9 octobre 2026</p>
+
+  <section class="summary" aria-labelledby="resume">
+    <h2 id="resume">En bref</h2>
+    <ul>
+      <li>FoodTrack ne demande aucun compte et n’affiche aucune publicité.</li>
+      <li>Vos réserves, dates, notes, prix et listes de courses sont enregistrés sur votre iPhone. L’éditeur de l’application ne les reçoit jamais.</li>
+      <li>L’application ne contient aucun outil de mesure d’audience ni de suivi publicitaire.</li>
+      <li>Certaines fonctions interrogent des services externes (Open Food Facts, RappelConso, et ChatGPT si vous le choisissez). Ils reçoivent uniquement ce qui est nécessaire, décrit ci-dessous.</li>
+    </ul>
+  </section>
+
+  <h2>1. Qui est responsable ?</h2>
+  <p>FoodTrack est éditée par <strong>Dominique BAUMONT</strong>. Pour toute question sur vos données : <a href="mailto:dombaumont@free.fr">dombaumont@free.fr</a>.</p>
+  <p>L’éditeur n’exploite aucun serveur pour FoodTrack et ne collecte aucune donnée personnelle sur ses utilisateurs.</p>
+
+  <h2>2. Données enregistrées sur votre iPhone</h2>
+  <p>Pour fonctionner, l’application enregistre sur votre appareil :</p>
+  <ul>
+    <li>vos produits, emplacements, quantités, dates de péremption, notes et prix ;</li>
+    <li>l’historique de vos ajouts, consommations et produits jetés (pour les statistiques) ;</li>
+    <li>votre liste de courses ;</li>
+    <li>les fiches produits téléchargées (pour une consultation hors connexion) ;</li>
+    <li>vos réglages (nombre de personnes du foyer, notifications, choix de l’assistant…).</li>
+  </ul>
+  <p>Si vous utilisez ChatGPT, votre clé API ou vos identifiants de connexion sont conservés dans le trousseau sécurisé de l’iPhone.</p>
+  <p>Ces données restent sous votre contrôle. Supprimer l’application les efface de l’appareil.</p>
+
+  <h2>3. iCloud et partage familial (facultatif)</h2>
+  <p>Si vous activez la synchronisation iCloud, vos données FoodTrack sont copiées dans <strong>votre espace iCloud privé</strong>, géré par Apple, pour être disponibles sur vos autres appareils. L’éditeur n’y a pas accès.</p>
+  <p>Si vous partagez vos réserves avec des proches, les personnes que vous invitez peuvent voir et modifier les mêmes réserves, la même liste de courses et le même historique. Vous pouvez arrêter le partage à tout moment depuis Réglages › iCloud et famille.</p>
+  <p>Pour supprimer vos données d’iCloud : ouvrez les Réglages de l’iPhone, touchez votre nom en haut de l’écran, puis iCloud › Gérer le stockage › FoodTrack.</p>
+
+  <h2>4. Services externes utilisés</h2>
+  <p>Comme pour toute connexion à Internet, chaque service contacté voit l’adresse IP de votre connexion.</p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th scope="col">Service</th><th scope="col">Quand</th><th scope="col">Ce qui est envoyé</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><a href="https://world.openfoodfacts.org">Open Food Facts</a><br>base de données collaborative de produits</td>
+        <td>Quand vous scannez un produit, ouvrez une fiche ou posez une question de nutrition</td>
+        <td>Le code-barres ou le nom du produit recherché. Aucune information sur votre stock ni sur vous.</td>
+      </tr>
+      <tr>
+        <td><a href="https://rappel.conso.gouv.fr">RappelConso</a><br>via data.economie.gouv.fr (ministère de l’Économie)</td>
+        <td>Vérification régulière des rappels de produits, si elle est activée</td>
+        <td>Rien sur vous : l’application télécharge la liste publique des produits rappelés et fait la comparaison sur l’iPhone. Seules les fiches des rappels trouvés sont ensuite demandées, par leur numéro.</td>
+      </tr>
+      <tr>
+        <td><a href="https://openai.com/fr-FR/policies/privacy-policy/">OpenAI (ChatGPT)</a><br>uniquement si vous le choisissez</td>
+        <td>Quand vous utilisez l’assistant, les recettes, la lecture d’un ticket de caisse ou l’identification d’un produit avec ChatGPT</td>
+        <td>Votre question, les noms et dates des produits concernés, et le texte lu sur un emballage ou un ticket. Les photos ne sont jamais envoyées. Ces échanges relèvent de la politique de confidentialité d’OpenAI et, si vous vous connectez avec votre compte ChatGPT, des réglages de ce compte.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Si vous choisissez <strong>Apple Intelligence</strong>, l’assistant fonctionne entièrement sur votre iPhone : rien n’est envoyé.</p>
+
+  <h2>5. Caméra et photos</h2>
+  <p>La caméra sert à lire les codes-barres et, si vous le demandez, à photographier un emballage ou un ticket de caisse. Les images sont analysées sur l’iPhone, puis supprimées : elles ne sont ni enregistrées ni envoyées.</p>
+  <p>Quand vous choisissez une photo dans votre bibliothèque, l’application n’a accès qu’à cette photo.</p>
+
+  <h2>6. Rappels, notifications, Siri et widgets</h2>
+  <ul>
+    <li><strong>App Rappels</strong> : si vous l’autorisez, FoodTrack copie votre liste de courses dans la liste de votre choix de l’app Rappels d’Apple.</li>
+    <li><strong>Notifications</strong> : elles sont programmées sur l’iPhone (dates de péremption, fin de stock, rappels de produits). Aucun serveur n’est utilisé.</li>
+    <li><strong>Siri et widgets</strong> : ils utilisent les données présentes sur votre iPhone, selon les conditions d’Apple.</li>
+  </ul>
+
+  <h2>7. Achats et abonnements</h2>
+  <p>Les achats de FoodTrack Pro sont traités par Apple via l’App Store. L’éditeur ne reçoit aucune donnée bancaire ni personnelle liée à vos paiements.</p>
+
+  <h2>8. Ce que FoodTrack ne fait pas</h2>
+  <ul>
+    <li>Pas de compte utilisateur.</li>
+    <li>Pas de publicité, ni de suivi publicitaire.</li>
+    <li>Pas de mesure d’audience ni d’outil d’analyse tiers.</li>
+    <li>Pas de vente ni de partage de vos données.</li>
+    <li>Pas d’accès à votre position, à vos contacts ni à votre santé.</li>
+  </ul>
+
+  <h2>9. Vos droits</h2>
+  <p>Conformément au Règlement général sur la protection des données (RGPD), vous disposez d’un droit d’accès, de rectification, d’effacement et d’opposition. Comme vos données restent sur votre iPhone et dans votre iCloud, vous pouvez les consulter, les modifier ou les supprimer directement dans l’application, ou en supprimant l’application et ses données iCloud.</p>
+  <p>Pour les données transmises à OpenAI ou Open Food Facts, leurs propres politiques de confidentialité s’appliquent.</p>
+  <p>Pour toute question : <a href="mailto:dombaumont@free.fr">dombaumont@free.fr</a>. Vous pouvez aussi adresser une réclamation à la <a href="https://www.cnil.fr/fr/plaintes">CNIL</a>.</p>
+
+  <h2>10. Modifications</h2>
+  <p>Cette politique peut évoluer avec l’application. La date de dernière mise à jour figure en haut de cette page.</p>
+
+  <footer>FoodTrack · Politique de confidentialité</footer>
+</main>
+</body>
+</html>
