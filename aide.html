@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aide – Food Tempo</title>
+<meta name="description" content="Aide et contact de l’application Food Tempo pour iPhone : questions fréquentes, abonnement, données.">
+<style>
+  :root {
+    --bg: #f3f6f1; --surface: #ffffff; --ink: #132019; --muted: #56665c;
+    --line: rgba(19, 32, 25, 0.12); --accent: #2e7d45; --soft: #e2efe4;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b0f0c; --surface: #151b17; --ink: #ecf2ed; --muted: #a3b5a9;
+            --line: rgba(236, 242, 237, 0.12); --accent: #6fcf87; --soft: #16261b; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+  h1 { font-size: clamp(2rem, 6vw, 2.8rem); line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 8px; }
+  h2 { font-size: 1.3rem; margin: 44px 0 12px; letter-spacing: -0.01em; }
+  p, ul, ol { margin: 0 0 12px; }
+  ul, ol { padding-left: 1.3em; }
+  li { margin-bottom: 4px; }
+  a { color: var(--accent); }
+  .meta { color: var(--muted); margin-bottom: 28px; }
+  .contact { background: var(--soft); border-radius: 18px; padding: 20px 22px; }
+  .contact h2 { margin-top: 0; }
+  .contact .mail { font-size: 1.2rem; font-weight: 700; }
+  details { background: var(--surface); border-radius: 14px; box-shadow: 0 0 0 1px var(--line); margin-bottom: 10px; }
+  summary { cursor: pointer; padding: 14px 18px; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 12px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; color: var(--accent); font-weight: 700; font-size: 1.2rem; line-height: 1; }
+  details[open] summary::after { content: "–"; }
+  summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 14px; }
+  details > div { padding: 0 18px 14px; color: var(--ink); }
+  .path { font-weight: 600; white-space: nowrap; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; display: flex; flex-wrap: wrap; gap: 8px 20px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Aide</h1>
+  <p class="meta">Food Tempo pour iPhone · Questions fréquentes et contact</p>
+
+  <section class="contact" aria-labelledby="contact">
+    <h2 id="contact">Nous contacter</h2>
+    <p>Une question, un problème, une idée ? Écrivez-nous :</p>
+    <p class="mail"><a href="mailto:dombaumont@free.fr?subject=Food%20Tempo">dombaumont@free.fr</a></p>
+    <p>Pour une réponse plus rapide, indiquez le modèle de votre iPhone, sa version d’iOS et la version de Food Tempo (<span class="path">Réglages › À propos et sources des données</span>).</p>
+  </section>
+
+  <h2>Premiers pas</h2>
+
+  <details>
+    <summary>Comment ajouter mes courses ?</summary>
+    <div>
+      <p>Touchez le bouton vert au centre de la barre d’onglets, puis <strong>Retour de courses</strong>. Choisissez l’emplacement (Frigo, Placard…) et passez les codes-barres devant la caméra, l’un après l’autre : chaque produit est ajouté automatiquement.</p>
+      <p>Pour un produit sans code-barres (fruits, vrac, fait maison), choisissez <strong>Manuel</strong>. Vous pouvez aussi photographier un <strong>ticket de caisse</strong> pour ajouter plusieurs articles et leurs prix.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Comment retirer un produit que j’ai consommé ou jeté ?</summary>
+    <div>
+      <p>Bouton vert › <strong>Consommer</strong>, puis scannez le produit : l’unité dont la date est la plus proche est retirée. Vous pouvez aussi ouvrir la fiche du produit et toucher <strong>Consommer 1</strong> ou <strong>Jeter 1</strong>. Une erreur ? Le bouton Annuler remet le produit exactement comme avant.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Un produit scanné n’est pas reconnu</summary>
+    <div>
+      <p>Les informations des produits viennent d’Open Food Facts, une base collaborative : certains produits n’y figurent pas encore. Vous pouvez alors saisir le nom vous-même, ou utiliser <strong>Identifier avec l’IA</strong> : prenez l’emballage en photo, le nom et la marque sont proposés et restent modifiables.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Comment indiquer une date de péremption ?</summary>
+    <div>
+      <p>Lors de l’ajout, ou plus tard depuis la fiche du produit : touchez la date du lot, puis un jour dans le calendrier ou un raccourci (1 semaine, 1 mois, 3 mois…). Choisissez <strong>DLC</strong> (« à consommer jusqu’au ») ou <strong>DLUO</strong> (« à consommer de préférence avant »).</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Comment créer mes propres emplacements ?</summary>
+    <div>
+      <p><span class="path">Réglages › Emplacements</span> : ajoutez, renommez ou supprimez des emplacements, avec une icône et une couleur. Un emplacement peut appartenir à un meuble, par exemple « Buffet › Épicerie ». Dans l’onglet Réserves, un appui long sur une carte permet de la déplacer.</p>
+    </div>
+  </details>
+
+  <h2>Rappels et notifications</h2>
+
+  <details>
+    <summary>Je ne reçois pas les notifications de péremption</summary>
+    <div>
+      <ol>
+        <li>Dans Food Tempo : <span class="path">Réglages › Notifications</span>, activez les rappels de péremption et choisissez l’heure.</li>
+        <li>Dans les Réglages de l’iPhone : <span class="path">Notifications › Food Tempo</span>, vérifiez que les notifications sont autorisées.</li>
+      </ol>
+      <p>Seuls les produits avec une date reçoivent une notification : 3 jours avant et le jour même, regroupées en une seule par jour.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Comment fonctionnent les rappels de produits officiels ?</summary>
+    <div>
+      <p>Food Tempo compare les codes-barres de vos produits en stock aux rappels publiés sur <a href="https://rappel.conso.gouv.fr">RappelConso</a>, le site officiel de l’État. La comparaison se fait sur votre iPhone : votre stock n’est jamais envoyé. Si un produit est concerné, une carte apparaît sur l’accueil avec les consignes à suivre.</p>
+      <p>Les produits sans code-barres ne peuvent pas être vérifiés. Le numéro de lot n’étant pas connu de l’application, vérifiez-le toujours sur l’emballage. Réglages : <span class="path">Réglages › Rappels de produits</span>.</p>
+    </div>
+  </details>
+
+  <h2>En magasin et liste de courses</h2>
+
+  <details>
+    <summary>Comment savoir si j’ai encore un produit à la maison ?</summary>
+    <div>
+      <p>Utilisez <strong>Vérifier le stock</strong> (icône code-barres à côté de la recherche dans l’onglet Réserves, ou dans la liste de courses) et scannez l’article en rayon. Food Tempo indique combien il vous en reste, où, et jusqu’à quand. Rien n’est ajouté ni retiré.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Comment fonctionne la liste de courses ?</summary>
+    <div>
+      <p>Ajoutez des articles à la main ou en scannant leur code-barres. Si vous fixez un <strong>stock minimum</strong> sur la fiche d’un produit, il s’ajoute tout seul à la liste quand vous passez en dessous. Avec Food Tempo Pro, la liste peut être copiée dans l’app Rappels d’Apple (<span class="path">Réglages › Liste de courses</span>).</p>
+    </div>
+  </details>
+
+  <h2>Assistant</h2>
+
+  <details>
+    <summary>L’assistant indique qu’il n’est pas disponible</summary>
+    <div>
+      <p>L’assistant fonctionne avec <strong>Apple Intelligence</strong>, directement sur l’iPhone. Il faut un iPhone 15 Pro ou plus récent, sous iOS 26, avec Apple Intelligence activé dans les Réglages de l’iPhone (<span class="path">Apple Intelligence et Siri</span>).</p>
+      <p>Sans Apple Intelligence, tout le reste de l’application fonctionne normalement.</p>
+    </div>
+  </details>
+
+  <h2>Food Tempo Pro</h2>
+
+  <details>
+    <summary>Que comprend la version gratuite ?</summary>
+    <div>
+      <p>15 articles scannés par mois au retour des courses, 4 emplacements et 1 ticket de caisse. L’assistant, les rappels officiels, la consommation, l’ajout manuel et la vérification du stock sont gratuits et illimités.</p>
+      <p>Food Tempo Pro débloque les scans, emplacements et tickets illimités, les statistiques du mois et de l’année, la liste de courses dans l’app Rappels et les widgets Anti-gaspi et Liste de courses.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>J’ai changé d’iPhone : comment retrouver mon abonnement ?</summary>
+    <div>
+      <p>Connectez-vous avec le même compte Apple, puis <span class="path">Réglages › Food Tempo Pro › Restaurer mes achats</span>.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Comment résilier mon abonnement ?</summary>
+    <div>
+      <p>Les abonnements sont gérés par Apple. Ouvrez les Réglages de l’iPhone, touchez votre nom, puis <span class="path">Abonnements › Food Tempo</span>. La résiliation prend effet à la fin de la période en cours. Pour un remboursement, faites la demande sur <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+    </div>
+  </details>
+
+  <h2>Mes données</h2>
+
+  <details>
+    <summary>Où sont enregistrées mes réserves ?</summary>
+    <div>
+      <p>Sur votre iPhone. Aucun compte n’est nécessaire et l’éditeur de l’application n’a accès à aucune de vos données. Attention : supprimer l’application efface vos réserves. Détails dans la <a href="./">politique de confidentialité</a>.</p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Comment découvrir l’application sans saisir mes produits ?</summary>
+    <div>
+      <p>Activez <span class="path">Réglages › Mode démonstration</span> : des produits, dates et rappels d’exemple sont chargés à part, sans toucher à vos réserves. Désactivez-le pour retrouver vos données.</p>
+    </div>
+  </details>
+
+  <footer>
+    <span>Food Tempo · Dominique BAUMONT</span>
+    <a href="./">Politique de confidentialité</a>
+  </footer>
+</main>
+</body>
+</html>
